@@ -1,0 +1,181 @@
+:root {
+  --white: #FFFFFF;
+  --platinum: #E8EBE4;
+  --gray: #BEC1BB;
+  --bluebell: #A491D2;
+  --soap: #CDC3E6;
+  --palelavender: #D4DCFF;
+  --darkjungle: #1B1F21;
+  --outerspace: #444749;
+  --oldsilver: #828485;
+}
+
+/* Global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F8F8F8;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background-color: var(--white); 
+  border-right: 1px solid var(--gray); 
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+}
+
+.menu-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icons i {
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--oldsilver);
+}
+
+.sidebar-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border-top: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+}
+
+.new-chat-btn {
+  width: 66%;
+  line-height: 50px;
+  background-color: var(--bluebell); 
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.new-chat-btn:hover {
+  background-color: var(--soap);
+}
+
+.new-chat-btn:focus {
+  background-color: var(--platinum);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid var(--gray); /* Separator line */
+}
+
+.contact-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.contact:last-child {
+  border-bottom: none;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8; /* Spanish pink */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-section {
+  text-align: center;
+}
+
+.icon {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+/* Typography */
+.large {
+  font-size: 45px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.x-small {
+  font-size: 12px;
+}
+
+.bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.gray {
+  color: var(--oldsilver); /* Old silver */
+}
+
+.white {
+  color: var(--white);
+}
+
+/* Remove old font-size and weight from individual elements */
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 450px;
+  margin: 0 auto;
+}
