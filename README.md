@@ -1,6 +1,6 @@
-#DesafioLatam - Modulo 2
+# DesafioLatam - Modulo 2
 
-##Desafío 1 - Sistema de mensajería
+## Desafío 1 - Sistema de mensajería
 
 En este desafío se ponen a prueba conocimientos sobre creación de diseños
 responsivos con Flexbox. Para lograrlo, ocupo mis conocimientos de este tema
